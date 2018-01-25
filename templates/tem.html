@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>
+        Vision
+    </title>
+    <script>
+    function myFunction() {
+       document.getElementById("process").style.display = "block";
+       document.getElementById("output").style.display = "none";
+    }
+    </script>
+</head>
+<body>
+        <div align="center" style="margin-bottom:50px;margin-top: 50px;">
+            <form action="http://localhost:5000/" method="POST" enctype ="multipart/form-data">
+                <input type="file" name="file" accept="image/*">
+                <input type="submit" onclick="myFunction()">
+            </form>
+        </div>
+        <div id="process" style="display:none;margin-top:70px;" align="center">
+            <img src="/static/setting.gif/">
+        </div>
+
+        <div id="output" align="center" style="display:block">
+            {% for tag in tags %}
+            <p><h4>{{tag}}</h4></p>
+            {% endfor %}
+        </div>
+</body>
+</html>
