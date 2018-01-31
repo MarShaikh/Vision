@@ -1,0 +1,66 @@
+body{
+	background-color: transparent !important;
+  background-image: url('background.jpg');
+  background-position: center 15%;
+  background-repeat: no-repeat;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form ol {
+  padding-left: 0;
+}
+
+form li, div > p {
+  background: #e5e5e5;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+form img {
+  height: 64px;
+  order: 1;
+}
+
+form p {
+  line-height: 32px;
+  padding-left: 10px;
+}
+
+#process{
+  display: none;
+}
+
+.loader{
+width: 26%;
+margin: 25vh auto 1em;
+display: inline-block;
+vertical-align: top;
+padding: 0 0 0 10em;
+}
+
+.row{
+  padding: 0 4px;
+}
+
+.column{
+  max-width: 25px;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+.img-responsive{
+  margin-bottom: 30px;
+}
